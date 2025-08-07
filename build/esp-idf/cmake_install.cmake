@@ -407,3 +407,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("D:/Projects/Assignment/HX_711_I2C_Sensor/HX711_I2C_Sensor/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("D:/Projects/Assignment/HX_711_I2C_Sensor/HX711_I2C_Sensor/build/esp-idf/protocol_examples_common/cmake_install.cmake")
+endif()
+

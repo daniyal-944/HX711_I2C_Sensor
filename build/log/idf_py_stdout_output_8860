@@ -1,0 +1,187 @@
+[0;32mI (13) boot: ESP-IDF v5.1.6-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time Aug  7 2025 00:01:12[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f278h (127608) map[0m
+[0;32mI (132) esp_image: segment 1: paddr=0002f2a0 vaddr=3ffb0000 size=00d78h (  3448) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=9d994h (645524) map[0m
+[0;32mI (371) esp_image: segment 3: paddr=000cd9bc vaddr=3ffb0d78 size=02f20h ( 12064) load[0m
+[0;32mI (376) esp_image: segment 4: paddr=000d08e4 vaddr=40080000 size=1685ch ( 92252) load[0m
+[0;32mI (426) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (438) cpu_start: Multicore app[0m
+[0;32mI (439) cpu_start: Pro cpu up.[0m
+[0;32mI (439) cpu_start: Starting app cpu, entry point is 0x400813c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (456) cpu_start: Application information:[0m
+[0;32mI (461) cpu_start: Project name:     app-template[0m
+[0;32mI (466) cpu_start: App version:      adb287d-dirty[0m
+[0;32mI (472) cpu_start: Compile time:     Aug  7 2025 00:03:40[0m
+[0;32mI (478) cpu_start: ELF file SHA256:  bb01710e6b20a4b2...[0m
+[0;32mI (484) cpu_start: ESP-IDF:          v5.1.6-dirty[0m
+[0;32mI (489) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (494) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (499) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (504) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (511) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (517) heap_init: At 3FFB8368 len 00027C98 (159 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (529) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 4009685C len 000097A4 (37 KiB): IRAM[0m
+[0;32mI (544) spi_flash: detected chip: generic[0m
+[0;32mI (547) spi_flash: flash io: dio[0m
+[0;33mW (551) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (565) app_start: Starting scheduler on CPU0[0m
+[0;32mI (569) app_start: Starting scheduler on CPU1[0m
+[0;32mI (569) main_task: Started on CPU0[0m
+[0;32mI (579) main_task: Calling app_main()[0m
+[0;32mI (579) HX711_TEST: [APP] Startup..[0m
+[0;32mI (579) HX711_TEST: [APP] Free memory: 277992 bytes[0m
+[0;32mI (589) HX711_TEST: [APP] IDF version: v5.1.6-dirty[0m
+[0;32mI (629) example_connect: Start example_connect.[0m
+[0;32mI (639) wifi:wifi driver task: 3ffc0184, prio:23, stack:6656, core=0[0m
+[0;32mI (649) wifi:wifi firmware version: 02461b5[0m
+[0;32mI (649) wifi:wifi certification version: v7.0[0m
+[0;32mI (649) wifi:config NVS flash: enabled[0m
+[0;32mI (649) wifi:config nano formating: disabled[0m
+[0;32mI (659) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (659) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (669) wifi:Init management short buffer num: 32[0m
+[0;32mI (669) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (679) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (679) wifi:Init static rx buffer num: 10[0m
+[0;32mI (679) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (689) wifi_init: rx ba win: 6[0m
+[0;32mI (689) wifi_init: tcpip mbox: 32[0m
+[0;32mI (689) wifi_init: udp mbox: 6[0m
+[0;32mI (699) wifi_init: tcp mbox: 6[0m
+[0;32mI (699) wifi_init: tcp tx win: 5760[0m
+[0;32mI (709) wifi_init: tcp rx win: 5760[0m
+[0;32mI (709) wifi_init: tcp mss: 1440[0m
+[0;32mI (709) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (719) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (729) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (809) wifi:mode : sta (78:1c:3c:e3:b0:b8)[0m
+[0;32mI (819) wifi:enable tsf[0m
+[0;32mI (819) example_connect: Connecting to embinx-Dev...[0m
+[0;33mW (819) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (829) example_connect: Waiting for IP(s)[0m
+[0;32mI (3489) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3489) wifi:state: init -> auth (b0)[0m
+[0;32mI (3499) wifi:state: auth -> assoc (0)[0m
+[0;32mI (3499) wifi:state: assoc -> run (10)[0m
+[0;32mI (3539) wifi:connected with embinx-Dev, aid = 54, channel 6, BW20, bssid = 98:4a:6b:ff:b4:14[0m
+[0;32mI (3539) wifi:security: WPA2-PSK, phy: bgn, rssi: -55[0m
+[0;32mI (3539) wifi:pm start, type: 1[0m
+
+[0;32mI (3539) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3629) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4629) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:7a1c:3cff:fee3:b0b8, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5049) esp_netif_handlers: example_netif_sta ip: 100.10.0.191, mask: 255.255.240.0, gw: 100.10.0.1[0m
+[0;32mI (5049) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 100.10.0.191[0m
+[0;32mI (5059) example_common: Connected to example_netif_sta[0m
+[0;32mI (5059) example_common: - IPv4 address: 100.10.0.191,[0m
+[0;32mI (5069) example_common: - IPv6 address: fe80:0000:0000:0000:7a1c:3cff:fee3:b0b8, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5079) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (5089) HX711_TEST: ****************** Initialing Pressure Sensor **********[0m
+[0;32mI (5089) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (5099) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (5099) main_task: Returned from app_main()[0m
+[0;32mI (5129) wifi:<ba-add>idx:0 (ifx:0, 98:4a:6b:ff:b4:14), tid:7, ssn:5, winSize:64[0m
+[0;32mI (5159) HX711: ===================== START TARE ====================[0m
+[0;32mI (5159) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (5489) wifi:<ba-add>idx:1 (ifx:0, 98:4a:6b:ff:b4:14), tid:4, ssn:1, winSize:64[0m
+[0;32mI (5799) wifi:<ba-del>idx:1, tid:4[0m
+[0;32mI (5799) wifi:<ba-add>idx:1 (ifx:0, 98:4a:6b:ff:b4:14), tid:0, ssn:1, winSize:64[0m
+[0;32mI (6109) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6109) MQTT_EXAMPLE: sent publish successful, msg_id=33578[0m
+[0;32mI (6119) MQTT_EXAMPLE: sent subscribe successful, msg_id=53800[0m
+[0;32mI (6119) MQTT_EXAMPLE: sent subscribe successful, msg_id=15583[0m
+[0;32mI (6119) MQTT_EXAMPLE: sent unsubscribe successful, msg_id=10793[0m
+[0;31mE (6419) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (6419) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (6419) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (6429) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (6429) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;31mE (6439) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (6449) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (7289) HX711: ===================== READ AVERAGE END : 6747856 ====================[0m
+[0;32mI (7289) HX711: ===================== END TARE: 6747856 ====================[0m
+[0;32mI (7289) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (8189) HX711: ===================== READ AVERAGE END : 6745812 ====================[0m
+[0;32mI (8189) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (13189) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (13929) HX711: ===================== READ AVERAGE END : 6736991 ====================[0m
+[0;32mI (13929) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (18929) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (19679) HX711: ===================== READ AVERAGE END : 6730391 ====================[0m
+[0;32mI (19679) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (21449) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (22209) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (22209) MQTT_EXAMPLE: sent publish successful, msg_id=34728[0m
+[0;32mI (22219) MQTT_EXAMPLE: sent subscribe successful, msg_id=31747[0m
+[0;32mI (22219) MQTT_EXAMPLE: sent subscribe successful, msg_id=17151[0m
+[0;32mI (22229) MQTT_EXAMPLE: sent unsubscribe successful, msg_id=44985[0m
+[0;31mE (22849) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (22849) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (22849) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (22859) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (22859) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;31mE (22869) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (22879) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (24679) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (25429) HX711: ===================== READ AVERAGE END : 6720671 ====================[0m
+[0;32mI (25429) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (30429) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (31169) HX711: ===================== READ AVERAGE END : 6714599 ====================[0m
+[0;32mI (31169) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (36169) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (36919) HX711: ===================== READ AVERAGE END : 6712584 ====================[0m
+[0;32mI (36919) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (37879) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (38469) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (38469) MQTT_EXAMPLE: sent publish successful, msg_id=4552[0m
+[0;32mI (38469) MQTT_EXAMPLE: sent subscribe successful, msg_id=1916[0m
+[0;32mI (38479) MQTT_EXAMPLE: sent subscribe successful, msg_id=62379[0m
+[0;32mI (38479) MQTT_EXAMPLE: sent unsubscribe successful, msg_id=5907[0m
+[0;31mE (38769) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (38769) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (38779) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (38779) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (38789) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;31mE (38789) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (38799) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (41919) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (42669) HX711: ===================== READ AVERAGE END : 6706959 ====================[0m
+[0;32mI (42669) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (47669) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (48409) HX711: ===================== READ AVERAGE END : 6705950 ====================[0m
+[0;32mI (48409) HX711_TEST: Pressure = 0.00 PSI[0m
+[0;32mI (48809) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (49429) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (49429) MQTT_EXAMPLE: sent publish successful, msg_id=52768[0m
+[0;32mI (49429) MQTT_EXAMPLE: sent subscribe successful, msg_id=17159[0m
+[0;32mI (49429) MQTT_EXAMPLE: sent subscribe successful, msg_id=31788[0m
+[0;32mI (49439) MQTT_EXAMPLE: sent unsubscribe successful, msg_id=15321[0m
+[0;31mE (49739) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (49739) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (49749) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (49749) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8008[0m
+[0;32mI (49759) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;31mE (49769) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (49779) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (53409) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (54159) HX711: ===================== READ AVERAGE END : 6701674 ====================[0m
+[0;32mI (54159) HX711_TEST: Pressure = 0.00 PSI[0m

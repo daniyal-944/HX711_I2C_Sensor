@@ -1,0 +1,8 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.1.6/tools/cmake/project.cmake:406 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  C:/Espressif/frameworks/esp-idf-v5.1.6/protocol_examples_common
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.1.6/tools/cmake/project.cmake:490 (__project_init)
+  CMakeLists.txt:6 (project)
+
+

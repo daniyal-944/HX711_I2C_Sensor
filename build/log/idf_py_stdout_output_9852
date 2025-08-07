@@ -1,0 +1,578 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7116
+ho 0 tail 12 room 4
+load:0x40078000,len:15688
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (33) boot: ESP-IDF v5.1.6-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Aug  7 2025 00:01:12[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v3.1[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (46) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (79) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (94) boot: End of partition table[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1eed0h (126672) map[0m
+[0;32mI (152) esp_image: segment 1: paddr=0002eef8 vaddr=3ffb0000 size=01120h (  4384) load[0m
+[0;32mI (154) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=9d45ch (644188) map[0m
+[0;32mI (391) esp_image: segment 3: paddr=000cd484 vaddr=3ffb1120 size=02b78h ( 11128) load[0m
+[0;32mI (395) esp_image: segment 4: paddr=000d0004 vaddr=40080000 size=1685ch ( 92252) load[0m
+[0;32mI (446) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (446) boot: Disabling RNG early entropy source...[0m
+[0;32mI (458) cpu_start: Multicore app[0m
+[0;32mI (459) cpu_start: Pro cpu up.[0m
+[0;32mI (459) cpu_start: Starting app cpu, entry point is 0x400813c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (476) cpu_start: Pro cpu start user code[0m
+[0;32mI (476) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (476) cpu_start: Application information:[0m
+[0;32mI (481) cpu_start: Project name:     app-template[0m
+[0;32mI (486) cpu_start: App version:      adb287d-dirty[0m
+[0;32mI (492) cpu_start: Compile time:     Aug  7 2025 00:03:40[0m
+[0;32mI (498) cpu_start: ELF file SHA256:  990249b7a633e1b7...[0m
+[0;32mI (504) cpu_start: ESP-IDF:          v5.1.6-dirty[0m
+[0;32mI (509) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (514) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (519) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (524) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (531) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFB8368 len 00027C98 (159 KiB): DRAM[0m
+[0;32mI (543) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (549) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (556) heap_init: At 4009685C len 000097A4 (37 KiB): IRAM[0m
+[0;32mI (563) spi_flash: detected chip: generic[0m
+[0;32mI (566) spi_flash: flash io: dio[0m
+[0;33mW (570) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (584) app_start: Starting scheduler on CPU0[0m
+[0;32mI (589) app_start: Starting scheduler on CPU1[0m
+[0;32mI (589) main_task: Started on CPU0[0m
+[0;32mI (599) main_task: Calling app_main()[0m
+[0;32mI (599) HX711_PUBLISH: Startup...[0m
+[0;32mI (599) HX711_PUBLISH: Free memory: 277992 bytes[0m
+[0;32mI (609) HX711_PUBLISH: IDF version: v5.1.6-dirty[0m
+[0;32mI (649) example_connect: Start example_connect.[0m
+[0;32mI (659) wifi:wifi driver task: 3ffc0120, prio:23, stack:6656, core=0[0m
+[0;32mI (669) wifi:wifi firmware version: 02461b5[0m
+[0;32mI (669) wifi:wifi certification version: v7.0[0m
+[0;32mI (669) wifi:config NVS flash: enabled[0m
+[0;32mI (669) wifi:config nano formating: disabled[0m
+[0;32mI (679) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (679) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (689) wifi:Init management short buffer num: 32[0m
+[0;32mI (689) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (699) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (699) wifi:Init static rx buffer num: 10[0m
+[0;32mI (699) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (709) wifi_init: rx ba win: 6[0m
+[0;32mI (709) wifi_init: tcpip mbox: 32[0m
+[0;32mI (709) wifi_init: udp mbox: 6[0m
+[0;32mI (719) wifi_init: tcp mbox: 6[0m
+[0;32mI (719) wifi_init: tcp tx win: 5760[0m
+[0;32mI (729) wifi_init: tcp rx win: 5760[0m
+[0;32mI (729) wifi_init: tcp mss: 1440[0m
+[0;32mI (729) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (739) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (749) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (829) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (879) wifi:mode : sta (78:1c:3c:e3:b0:b8)[0m
+[0;32mI (879) wifi:enable tsf[0m
+[0;32mI (879) example_connect: Connecting to embinx-Dev...[0m
+[0;33mW (879) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (889) example_connect: Waiting for IP(s)[0m
+[0;32mI (3549) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (3549) wifi:state: init -> auth (b0)[0m
+[0;32mI (3549) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4549) wifi:state: assoc -> init (400)[0m
+[0;32mI (4559) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1[0m
+[0;32mI (4559) wifi:new:<11,0>, old:<6,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (4559) wifi:state: init -> auth (b0)[0m
+[0;32mI (4569) wifi:state: auth -> assoc (0)[0m
+[0;32mI (4589) wifi:state: assoc -> run (10)[0m
+[0;32mI (4619) wifi:connected with embinx-Dev, aid = 38, channel 11, BW20, bssid = 98:4a:6b:ff:f8:6b[0m
+[0;32mI (4619) wifi:security: WPA2-PSK, phy: bgn, rssi: -58[0m
+[0;32mI (4619) wifi:pm start, type: 1[0m
+
+[0;32mI (4619) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4639) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (6139) esp_netif_handlers: example_netif_sta ip: 100.10.0.191, mask: 255.255.240.0, gw: 100.10.0.1[0m
+[0;32mI (6139) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 100.10.0.191[0m
+[0;32mI (6639) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:7a1c:3cff:fee3:b0b8, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6639) example_common: Connected to example_netif_sta[0m
+[0;32mI (6649) example_common: - IPv4 address: 100.10.0.191,[0m
+[0;32mI (6649) example_common: - IPv6 address: fe80:0000:0000:0000:7a1c:3cff:fee3:b0b8, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6669) HX711_PUBLISH: Initializing Pressure Sensor Task...[0m
+[0;32mI (6669) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6679) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (6689) HX711: ===================== START TARE ====================[0m
+[0;32mI (6699) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (6699) wifi:<ba-add>idx:0 (ifx:0, 98:4a:6b:ff:f8:6b), tid:7, ssn:5, winSize:64[0m
+[0;32mI (6679) main_task: Returned from app_main()[0m
+[0;32mI (6719) wifi:<ba-add>idx:1 (ifx:0, 98:4a:6b:ff:f8:6b), tid:4, ssn:1, winSize:64[0m
+[0;32mI (7009) wifi:<ba-del>idx:1, tid:4[0m
+[0;32mI (7009) wifi:<ba-add>idx:1 (ifx:0, 98:4a:6b:ff:f8:6b), tid:0, ssn:1, winSize:64[0m
+[0;32mI (7309) HX711_PUBLISH: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8799) HX711: ===================== READ AVERAGE END : 6690989 ====================[0m
+[0;32mI (8799) HX711: ===================== END TARE: 6690989 ====================[0m
+[0;32mI (8799) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (9699) HX711: ===================== READ AVERAGE END : 6689064 ====================[0m
+[0;32mI (9699) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (14699) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (15449) HX711: ===================== READ AVERAGE END : 6685594 ====================[0m
+[0;32mI (15449) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (20449) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (21199) HX711: ===================== READ AVERAGE END : 6682197 ====================[0m
+[0;32mI (21199) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (26199) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (26939) HX711: ===================== READ AVERAGE END : 6679378 ====================[0m
+[0;32mI (26939) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (31939) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (32689) HX711: ===================== READ AVERAGE END : 6681282 ====================[0m
+[0;32mI (32689) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (37689) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (38439) HX711: ===================== READ AVERAGE END : 6679703 ====================[0m
+[0;32mI (38439) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (43439) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (44179) HX711: ===================== READ AVERAGE END : 6673874 ====================[0m
+[0;32mI (44179) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (49179) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (49929) HX711: ===================== READ AVERAGE END : 6667588 ====================[0m
+[0;32mI (49929) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (54929) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (55679) HX711: ===================== READ AVERAGE END : 6666208 ====================[0m
+[0;32mI (55679) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (60679) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (61429) HX711: ===================== READ AVERAGE END : 7144865 ====================[0m
+[0;32mI (61429) HX711_PUBLISH: Pressure = 0.31 PSI[0m
+[0;32mI (66429) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (67169) HX711: ===================== READ AVERAGE END : 7390613 ====================[0m
+[0;32mI (67169) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (72169) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (72919) HX711: ===================== READ AVERAGE END : 7389339 ====================[0m
+[0;32mI (72919) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (77919) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (78669) HX711: ===================== READ AVERAGE END : 9078165 ====================[0m
+[0;32mI (78669) HX711_PUBLISH: Pressure = 1.61 PSI[0m
+[0;32mI (83669) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (84409) HX711: ===================== READ AVERAGE END : 12026878 ====================[0m
+[0;32mI (84409) HX711_PUBLISH: Pressure = 3.60 PSI[0m
+[0;32mI (89409) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (90159) HX711: ===================== READ AVERAGE END : 9585164 ====================[0m
+[0;32mI (90159) HX711_PUBLISH: Pressure = 1.95 PSI[0m
+[0;32mI (95159) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (95909) HX711: ===================== READ AVERAGE END : 9067401 ====================[0m
+[0;32mI (95909) HX711_PUBLISH: Pressure = 1.60 PSI[0m
+[0;32mI (100909) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (101659) HX711: ===================== READ AVERAGE END : 7392130 ====================[0m
+[0;32mI (101659) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (106659) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (107399) HX711: ===================== READ AVERAGE END : 6947362 ====================[0m
+[0;32mI (107399) HX711_PUBLISH: Pressure = 0.17 PSI[0m
+[0;32mI (112399) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (113149) HX711: ===================== READ AVERAGE END : 6959474 ====================[0m
+[0;32mI (113149) HX711_PUBLISH: Pressure = 0.18 PSI[0m
+[0;32mI (118149) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (118899) HX711: ===================== READ AVERAGE END : 7390420 ====================[0m
+[0;32mI (118899) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (123899) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (124639) HX711: ===================== READ AVERAGE END : 6951829 ====================[0m
+[0;32mI (124639) HX711_PUBLISH: Pressure = 0.18 PSI[0m
+[0;32mI (129639) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (130389) HX711: ===================== READ AVERAGE END : 6892558 ====================[0m
+[0;32mI (130389) HX711_PUBLISH: Pressure = 0.14 PSI[0m
+[0;32mI (135389) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (136139) HX711: ===================== READ AVERAGE END : 6881734 ====================[0m
+[0;32mI (136139) HX711_PUBLISH: Pressure = 0.13 PSI[0m
+[0;32mI (141139) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (141889) HX711: ===================== READ AVERAGE END : 6875652 ====================[0m
+[0;32mI (141889) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (146889) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (147629) HX711: ===================== READ AVERAGE END : 6884077 ====================[0m
+[0;32mI (147629) HX711_PUBLISH: Pressure = 0.13 PSI[0m
+[0;32mI (152629) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (153379) HX711: ===================== READ AVERAGE END : 6898509 ====================[0m
+[0;32mI (153379) HX711_PUBLISH: Pressure = 0.14 PSI[0m
+[0;32mI (158379) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (159129) HX711: ===================== READ AVERAGE END : 6897674 ====================[0m
+[0;32mI (159129) HX711_PUBLISH: Pressure = 0.14 PSI[0m
+[0;32mI (164129) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (164869) HX711: ===================== READ AVERAGE END : 6886633 ====================[0m
+[0;32mI (164869) HX711_PUBLISH: Pressure = 0.13 PSI[0m
+[0;32mI (169869) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (170619) HX711: ===================== READ AVERAGE END : 6883244 ====================[0m
+[0;32mI (170619) HX711_PUBLISH: Pressure = 0.13 PSI[0m
+[0;32mI (175619) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (176369) HX711: ===================== READ AVERAGE END : 6876015 ====================[0m
+[0;32mI (176369) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (181369) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (182119) HX711: ===================== READ AVERAGE END : 6877261 ====================[0m
+[0;32mI (182119) HX711_PUBLISH: Pressure = 0.13 PSI[0m
+[0;32mI (187119) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (187859) HX711: ===================== READ AVERAGE END : 6873280 ====================[0m
+[0;32mI (187859) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (192859) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (193609) HX711: ===================== READ AVERAGE END : 6873291 ====================[0m
+[0;32mI (193609) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (198609) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (199359) HX711: ===================== READ AVERAGE END : 6866514 ====================[0m
+[0;32mI (199359) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (204359) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (205099) HX711: ===================== READ AVERAGE END : 6863668 ====================[0m
+[0;32mI (205099) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (210099) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (210849) HX711: ===================== READ AVERAGE END : 6859377 ====================[0m
+[0;32mI (210849) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (215849) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (216599) HX711: ===================== READ AVERAGE END : 6857417 ====================[0m
+[0;32mI (216599) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (221599) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (222349) HX711: ===================== READ AVERAGE END : 6857429 ====================[0m
+[0;32mI (222349) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (227349) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (228089) HX711: ===================== READ AVERAGE END : 6856630 ====================[0m
+[0;32mI (228089) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (233089) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (233839) HX711: ===================== READ AVERAGE END : 6852648 ====================[0m
+[0;32mI (233839) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (238839) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (239589) HX711: ===================== READ AVERAGE END : 6852819 ====================[0m
+[0;32mI (239589) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (244599) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (245339) HX711: ===================== READ AVERAGE END : 6853451 ====================[0m
+[0;32mI (245339) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (250339) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (251079) HX711: ===================== READ AVERAGE END : 6851382 ====================[0m
+[0;32mI (251079) HX711_PUBLISH: Pressure = 0.11 PSI[0m
+[0;32mI (256079) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (256829) HX711: ===================== READ AVERAGE END : 6846206 ====================[0m
+[0;32mI (256829) HX711_PUBLISH: Pressure = 0.10 PSI[0m
+[0;32mI (261829) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (262579) HX711: ===================== READ AVERAGE END : 6844503 ====================[0m
+[0;32mI (262579) HX711_PUBLISH: Pressure = 0.10 PSI[0m
+[0;32mI (267579) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (268329) HX711: ===================== READ AVERAGE END : 6840102 ====================[0m
+[0;32mI (268329) HX711_PUBLISH: Pressure = 0.10 PSI[0m
+[0;32mI (273329) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (274069) HX711: ===================== READ AVERAGE END : 7387264 ====================[0m
+[0;32mI (274069) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (279069) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (279819) HX711: ===================== READ AVERAGE END : 12366620 ====================[0m
+[0;32mI (279819) HX711_PUBLISH: Pressure = 3.83 PSI[0m
+[0;32mI (284819) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (285569) HX711: ===================== READ AVERAGE END : 10138117 ====================[0m
+[0;32mI (285569) HX711_PUBLISH: Pressure = 2.33 PSI[0m
+[0;32mI (290569) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (291319) HX711: ===================== READ AVERAGE END : 7388363 ====================[0m
+[0;32mI (291319) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (296319) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (297059) HX711: ===================== READ AVERAGE END : 11497007 ====================[0m
+[0;32mI (297059) HX711_PUBLISH: Pressure = 3.24 PSI[0m
+[0;32mI (302059) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (302809) HX711: ===================== READ AVERAGE END : 7389334 ====================[0m
+[0;32mI (302809) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (307809) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (308559) HX711: ===================== READ AVERAGE END : 7389103 ====================[0m
+[0;32mI (308559) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (313559) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (314299) HX711: ===================== READ AVERAGE END : 7399605 ====================[0m
+[0;32mI (314299) HX711_PUBLISH: Pressure = 0.48 PSI[0m
+[0;32mI (319299) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (320049) HX711: ===================== READ AVERAGE END : 9853900 ====================[0m
+[0;32mI (320049) HX711_PUBLISH: Pressure = 2.13 PSI[0m
+[0;32mI (325049) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (325799) HX711: ===================== READ AVERAGE END : 9759479 ====================[0m
+[0;32mI (325799) HX711_PUBLISH: Pressure = 2.07 PSI[0m
+[0;32mI (330799) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (331549) HX711: ===================== READ AVERAGE END : 7387245 ====================[0m
+[0;32mI (331549) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (336549) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (337289) HX711: ===================== READ AVERAGE END : 10554840 ====================[0m
+[0;32mI (337289) HX711_PUBLISH: Pressure = 2.61 PSI[0m
+[0;32mI (342289) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (343039) HX711: ===================== READ AVERAGE END : 7436814 ====================[0m
+[0;32mI (343039) HX711_PUBLISH: Pressure = 0.50 PSI[0m
+[0;32mI (348039) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (348789) HX711: ===================== READ AVERAGE END : 7586260 ====================[0m
+[0;32mI (348789) HX711_PUBLISH: Pressure = 0.60 PSI[0m
+[0;32mI (353789) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (354529) HX711: ===================== READ AVERAGE END : 7329409 ====================[0m
+[0;32mI (354529) HX711_PUBLISH: Pressure = 0.43 PSI[0m
+[0;32mI (359529) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (360279) HX711: ===================== READ AVERAGE END : 7337005 ====================[0m
+[0;32mI (360279) HX711_PUBLISH: Pressure = 0.44 PSI[0m
+[0;32mI (365279) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (366029) HX711: ===================== READ AVERAGE END : 7294076 ====================[0m
+[0;32mI (366029) HX711_PUBLISH: Pressure = 0.41 PSI[0m
+[0;32mI (371029) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (371779) HX711: ===================== READ AVERAGE END : 7388669 ====================[0m
+[0;32mI (371779) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (376789) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (377519) HX711: ===================== READ AVERAGE END : 6558703 ====================[0m
+[0;32mI (377519) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (382519) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (383269) HX711: ===================== READ AVERAGE END : 7384175 ====================[0m
+[0;32mI (383269) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (388269) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (389019) HX711: ===================== READ AVERAGE END : 9003860 ====================[0m
+[0;32mI (389019) HX711_PUBLISH: Pressure = 1.56 PSI[0m
+[0;32mI (394019) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (394759) HX711: ===================== READ AVERAGE END : 8125340 ====================[0m
+[0;32mI (394759) HX711_PUBLISH: Pressure = 0.97 PSI[0m
+[0;32mI (399759) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (400509) HX711: ===================== READ AVERAGE END : 7295606 ====================[0m
+[0;32mI (400509) HX711_PUBLISH: Pressure = 0.41 PSI[0m
+[0;32mI (405509) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (406259) HX711: ===================== READ AVERAGE END : 7217945 ====================[0m
+[0;32mI (406259) HX711_PUBLISH: Pressure = 0.36 PSI[0m
+[0;32mI (411259) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (412009) HX711: ===================== READ AVERAGE END : 7388381 ====================[0m
+[0;32mI (412009) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (417009) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (417749) HX711: ===================== READ AVERAGE END : 7388648 ====================[0m
+[0;32mI (417749) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (422749) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (423499) HX711: ===================== READ AVERAGE END : 7389393 ====================[0m
+[0;32mI (423499) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (428499) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (429249) HX711: ===================== READ AVERAGE END : 7388587 ====================[0m
+[0;32mI (429249) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (434249) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (434999) HX711: ===================== READ AVERAGE END : 7388722 ====================[0m
+[0;32mI (434999) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (439999) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (440739) HX711: ===================== READ AVERAGE END : 7388731 ====================[0m
+[0;32mI (440739) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (445739) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (446489) HX711: ===================== READ AVERAGE END : 7388082 ====================[0m
+[0;32mI (446489) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (451489) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (452239) HX711: ===================== READ AVERAGE END : 12276963 ====================[0m
+[0;32mI (452239) HX711_PUBLISH: Pressure = 3.77 PSI[0m
+[0;32mI (457239) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (457989) HX711: ===================== READ AVERAGE END : 12240122 ====================[0m
+[0;32mI (457989) HX711_PUBLISH: Pressure = 3.74 PSI[0m
+[0;32mI (462989) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (463729) HX711: ===================== READ AVERAGE END : 10797319 ====================[0m
+[0;32mI (463729) HX711_PUBLISH: Pressure = 2.77 PSI[0m
+[0;32mI (468729) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (469479) HX711: ===================== READ AVERAGE END : 10690694 ====================[0m
+[0;32mI (469479) HX711_PUBLISH: Pressure = 2.70 PSI[0m
+[0;32mI (474479) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (475229) HX711: ===================== READ AVERAGE END : 9489314 ====================[0m
+[0;32mI (475229) HX711_PUBLISH: Pressure = 1.89 PSI[0m
+[0;32mI (480229) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (480979) HX711: ===================== READ AVERAGE END : 10015356 ====================[0m
+[0;32mI (480979) HX711_PUBLISH: Pressure = 2.24 PSI[0m
+[0;32mI (485979) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (486719) HX711: ===================== READ AVERAGE END : 9326078 ====================[0m
+[0;32mI (486719) HX711_PUBLISH: Pressure = 1.78 PSI[0m
+[0;32mI (491719) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (492469) HX711: ===================== READ AVERAGE END : 7390007 ====================[0m
+[0;32mI (492469) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (497469) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (498219) HX711: ===================== READ AVERAGE END : 7389137 ====================[0m
+[0;32mI (498219) HX711_PUBLISH: Pressure = 0.47 PSI[0m
+[0;32mI (503219) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (503959) HX711: ===================== READ AVERAGE END : 6702037 ====================[0m
+[0;32mI (503959) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (508959) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (509709) HX711: ===================== READ AVERAGE END : 6673791 ====================[0m
+[0;32mI (509709) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (514709) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (515459) HX711: ===================== READ AVERAGE END : 6685614 ====================[0m
+[0;32mI (515459) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (520459) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (521209) HX711: ===================== READ AVERAGE END : 6496778 ====================[0m
+[0;32mI (521209) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (526209) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (526949) HX711: ===================== READ AVERAGE END : 6707480 ====================[0m
+[0;32mI (526949) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (531949) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (532699) HX711: ===================== READ AVERAGE END : 6709747 ====================[0m
+[0;32mI (532699) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (537699) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (538449) HX711: ===================== READ AVERAGE END : 5275806 ====================[0m
+[0;32mI (538449) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (543449) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (544189) HX711: ===================== READ AVERAGE END : 5026421 ====================[0m
+[0;32mI (544189) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (549189) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (549939) HX711: ===================== READ AVERAGE END : 6708159 ====================[0m
+[0;32mI (549939) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (554939) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (555689) HX711: ===================== READ AVERAGE END : 6698400 ====================[0m
+[0;32mI (555689) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (560689) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (561429) HX711: ===================== READ AVERAGE END : 6694274 ====================[0m
+[0;32mI (561429) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (566429) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (567179) HX711: ===================== READ AVERAGE END : 6690305 ====================[0m
+[0;32mI (567179) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (572179) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (572929) HX711: ===================== READ AVERAGE END : 6690219 ====================[0m
+[0;32mI (572929) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (577939) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (578669) HX711: ===================== READ AVERAGE END : 6691823 ====================[0m
+[0;32mI (578669) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (583669) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (584419) HX711: ===================== READ AVERAGE END : 6687798 ====================[0m
+[0;32mI (584419) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (589419) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (590169) HX711: ===================== READ AVERAGE END : 6684071 ====================[0m
+[0;32mI (590169) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (595169) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (595909) HX711: ===================== READ AVERAGE END : 6679595 ====================[0m
+[0;32mI (595909) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (600919) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (601659) HX711: ===================== READ AVERAGE END : 6677766 ====================[0m
+[0;32mI (601659) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (606659) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (607409) HX711: ===================== READ AVERAGE END : 6673173 ====================[0m
+[0;32mI (607409) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (612409) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (613159) HX711: ===================== READ AVERAGE END : 6673351 ====================[0m
+[0;32mI (613159) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (618159) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (618899) HX711: ===================== READ AVERAGE END : 6673188 ====================[0m
+[0;32mI (618899) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (623909) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (624649) HX711: ===================== READ AVERAGE END : 6671893 ====================[0m
+[0;32mI (624649) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (629649) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (630399) HX711: ===================== READ AVERAGE END : 6673865 ====================[0m
+[0;32mI (630399) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (635399) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (636139) HX711: ===================== READ AVERAGE END : 6679555 ====================[0m
+[0;32mI (636139) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (641139) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (641889) HX711: ===================== READ AVERAGE END : 6687892 ====================[0m
+[0;32mI (641889) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (646899) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (647639) HX711: ===================== READ AVERAGE END : 6690800 ====================[0m
+[0;32mI (647639) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (652639) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (653379) HX711: ===================== READ AVERAGE END : 6693298 ====================[0m
+[0;32mI (653379) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (658379) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (659129) HX711: ===================== READ AVERAGE END : 6698855 ====================[0m
+[0;32mI (659129) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (664129) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (664879) HX711: ===================== READ AVERAGE END : 6702053 ====================[0m
+[0;32mI (664879) HX711_PUBLISH: Pressure = 0.01 PSI[0m
+[0;32mI (669879) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (670619) HX711: ===================== READ AVERAGE END : 6695973 ====================[0m
+[0;32mI (670619) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (675619) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (676369) HX711: ===================== READ AVERAGE END : 6686675 ====================[0m
+[0;32mI (676369) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (681369) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (682119) HX711: ===================== READ AVERAGE END : 6685117 ====================[0m
+[0;32mI (682119) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (687119) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (687859) HX711: ===================== READ AVERAGE END : 6683590 ====================[0m
+[0;32mI (687859) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (692859) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (693609) HX711: ===================== READ AVERAGE END : 6677961 ====================[0m
+[0;32mI (693609) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (698609) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (699359) HX711: ===================== READ AVERAGE END : 6670904 ====================[0m
+[0;32mI (699359) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (704359) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (705099) HX711: ===================== READ AVERAGE END : 6667516 ====================[0m
+[0;32mI (705099) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (710099) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (710849) HX711: ===================== READ AVERAGE END : 6668207 ====================[0m
+[0;32mI (710849) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (715849) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (716599) HX711: ===================== READ AVERAGE END : 6665358 ====================[0m
+[0;32mI (716599) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (721599) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (722349) HX711: ===================== READ AVERAGE END : 6664570 ====================[0m
+[0;32mI (722349) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (727349) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (728089) HX711: ===================== READ AVERAGE END : 6663741 ====================[0m
+[0;32mI (728089) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (733089) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (733839) HX711: ===================== READ AVERAGE END : 6664659 ====================[0m
+[0;32mI (733839) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (738839) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (739589) HX711: ===================== READ AVERAGE END : 6667241 ====================[0m
+[0;32mI (739589) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (744589) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (745329) HX711: ===================== READ AVERAGE END : 6665114 ====================[0m
+[0;32mI (745329) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (750339) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (751079) HX711: ===================== READ AVERAGE END : 6665613 ====================[0m
+[0;32mI (751079) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (756079) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (756829) HX711: ===================== READ AVERAGE END : 6664985 ====================[0m
+[0;32mI (756829) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (761829) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (762579) HX711: ===================== READ AVERAGE END : 6663301 ====================[0m
+[0;32mI (762579) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (767579) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (768319) HX711: ===================== READ AVERAGE END : 6656631 ====================[0m
+[0;32mI (768319) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (773319) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (774069) HX711: ===================== READ AVERAGE END : 6657890 ====================[0m
+[0;32mI (774069) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (779069) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (779819) HX711: ===================== READ AVERAGE END : 6657287 ====================[0m
+[0;32mI (779819) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (784819) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (785569) HX711: ===================== READ AVERAGE END : 6654857 ====================[0m
+[0;32mI (785569) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (790569) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (791319) HX711: ===================== READ AVERAGE END : 6655493 ====================[0m
+[0;32mI (791319) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (796319) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (797059) HX711: ===================== READ AVERAGE END : 8045813 ====================[0m
+[0;32mI (797059) HX711_PUBLISH: Pressure = 0.91 PSI[0m
+[0;32mI (802059) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (802809) HX711: ===================== READ AVERAGE END : 10884054 ====================[0m
+[0;32mI (802809) HX711_PUBLISH: Pressure = 2.83 PSI[0m
+[0;32mI (807809) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (808559) HX711: ===================== READ AVERAGE END : 11533276 ====================[0m
+[0;32mI (808559) HX711_PUBLISH: Pressure = 3.27 PSI[0m
+[0;32mI (813559) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (814309) HX711: ===================== READ AVERAGE END : 10154535 ====================[0m
+[0;32mI (814309) HX711_PUBLISH: Pressure = 2.34 PSI[0m
+[0;32mI (819309) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (820049) HX711: ===================== READ AVERAGE END : 8952420 ====================[0m
+[0;32mI (820049) HX711_PUBLISH: Pressure = 1.53 PSI[0m
+[0;32mI (825049) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (825799) HX711: ===================== READ AVERAGE END : 7127540 ====================[0m
+[0;32mI (825799) HX711_PUBLISH: Pressure = 0.29 PSI[0m
+[0;32mI (830799) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (831549) HX711: ===================== READ AVERAGE END : 7397971 ====================[0m
+[0;32mI (831549) HX711_PUBLISH: Pressure = 0.48 PSI[0m
+[0;32mI (836559) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (837289) HX711: ===================== READ AVERAGE END : 6865266 ====================[0m
+[0;32mI (837289) HX711_PUBLISH: Pressure = 0.12 PSI[0m
+[0;32mI (842289) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (843039) HX711: ===================== READ AVERAGE END : 6435693 ====================[0m
+[0;32mI (843039) HX711_PUBLISH: Pressure = 0.00 PSI[0m
+[0;32mI (848039) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (848789) HX711: ===================== READ AVERAGE END : 7373026 ====================[0m
+[0;32mI (848789) HX711_PUBLISH: Pressure = 0.46 PSI[0m
+[0;32mI (853789) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (854529) HX711: ===================== READ AVERAGE END : 11142315 ====================[0m
+[0;32mI (854529) HX711_PUBLISH: Pressure = 3.00 PSI[0m
+[0;32mI (859529) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (860279) HX711: ===================== READ AVERAGE END : 10731726 ====================[0m
+[0;32mI (860279) HX711_PUBLISH: Pressure = 2.73 PSI[0m
+[0;32mI (865279) HX711: ===================== READ AVERAGE START ====================[0m
+[0;32mI (866029) HX711: ===================== READ AVERAGE END : 7387162 ====================[0m
+[0;32mI (866029) HX711_PUBLISH: Pressure = 0.47 PSI[0m
