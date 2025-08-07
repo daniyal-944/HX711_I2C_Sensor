@@ -15,10 +15,10 @@ This implementation reads raw ADC values from the HX711 module, calibrates the v
 
 ## 📷 Screenshots
 **Raw ADC Values Displayed via idf.py monitor**  
-*(Insert screenshot of terminal showing raw values here)*  
+  ![PRESSURE SENSOR](<pressure sensor counts.PNG>)
 
 **PSI Data Displayed on ThingsBoard Dashboard**  
-*(Insert screenshot of ThingsBoard with real-time PSI widget)*  
+![Pressure Monitoring via Thingsboard Dashboard](<Pressure monitor.PNG>)
 
 ## ⚙️ Workflow Description
 
